@@ -14,12 +14,12 @@ const Post = require("./models/Post");
 
 dotenv.config();
 
-const port = process.env.PORT || 3000;
+
 
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: [port, "https://post-it-heroku.herokuapp.com"],
+    origin: ["http://localhost:3000", "https://tribe-internship.onrender.com/"],
   },
 });
 
