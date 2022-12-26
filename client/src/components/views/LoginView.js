@@ -14,7 +14,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { login } from "../../api/users";
 import ErrorAlert from "../ErrorAlert";
 import { loginUser } from "../../helpers/authHelper";
-import Copyright from "../Copyright";
+// import Copyright from "../Copyright";
 
 const LoginView = () => {
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ const LoginView = () => {
       <Stack alignItems="center">
         <Typography variant="h2" color="text.secondary" sx={{ mb: 6 }}>
           <Link to="/" color="inherit" underline="none">
-            PostIt
+            Social Media
           </Link>
         </Typography>
         <Typography variant="h5" gutterBottom>
@@ -85,7 +85,7 @@ const LoginView = () => {
           </Button>
         </Box>
         <Box sx={{ mt: 3 }}>
-          <Copyright />
+         {/* <Copyright /> */}
         </Box>
       </Stack>
     </Container>

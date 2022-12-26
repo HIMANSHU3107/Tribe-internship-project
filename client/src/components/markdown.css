@@ -1,7 +1,14 @@
 .markdown :first-child {
   margin-top: 0;
+  background-color: rgb(246, 250, 250);
 }
 
 .markdown :last-child {
   margin-bottom: 0;
 }
+
+.likebox{
+  background-color: lightcyan;
+}
+
+

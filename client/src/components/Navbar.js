@@ -79,19 +79,19 @@ const Navbar = () => {
         spacing={!mobile ? 2 : 0}
       >
         <HorizontalStack>
-          <AiFillFileText
+          {/* <AiFillFileText
             size={33}
-            color={theme.palette.primary.main}
+            color={theme.palette.secondary.main}
             onClick={() => navigate("/")}
-          />
+          /> */}
           <Typography
             sx={{ display: mobile ? "none" : "block" }}
             variant={navbarWidth ? "h6" : "h4"}
             mr={1}
-            color={theme.palette.primary.main}
+            color={theme.palette.secondary.main}
           >
             {/* <Link to="/" color="inherit"> */}
-              PostIt
+             Social Media 
             {/* </Link> */}
           </Typography>
         </HorizontalStack>
@@ -120,9 +120,9 @@ const Navbar = () => {
           </IconButton>
           {user ? (
             <>
-              <IconButton component={Link} to={"/messenger"}>
+              {/* <IconButton component={Link} to={"/messenger"}>
                 <AiFillMessage />
-              </IconButton>
+              </IconButton> */}
               <IconButton component={Link}  to={"/users/" + username}>
                 <UserAvatar width={30} height={30} username={user.username} />
               </IconButton>
