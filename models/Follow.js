@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//follow a user
 const FollowSchema = new mongoose.Schema(
   {
     userId: {
