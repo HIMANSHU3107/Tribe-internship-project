@@ -2,7 +2,7 @@ const Conversation = require("../models/Conversation");
 const Message = require("../models/Message");
 const User = require("../models/User");
 const mongoose = require("mongoose");
-
+//function to send message
 const sendMessage = async (req, res) => {
   try {
     const recipientId = req.params.id;
