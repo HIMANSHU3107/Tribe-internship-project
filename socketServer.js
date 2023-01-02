@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 let users = [];
-
+//socket
 const authSocket = (socket, next) => {
   let token = socket.handshake.auth.token;
 
