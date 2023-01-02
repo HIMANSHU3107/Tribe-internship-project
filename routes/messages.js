@@ -3,6 +3,7 @@ const router = express.Router();
 const messageController = require("../controllers/messageController");
 const { verifyToken } = require("../middleware/auth");
 
+//tokens
 router.get("/", verifyToken, messageController.getConversations);
 router.post("/:id", verifyToken, messageController.sendMessage);
 router.get("/:id", verifyToken, messageController.getMessages);
