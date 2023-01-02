@@ -15,7 +15,7 @@ import {
   useSearchParams,
 } from "react-router-dom";
 import theme from "./theme";
-
+//importing libraries
 import PostView from "./components/views/PostView";
 import CreatePostView from "./components/views/CreatePostView";
 import ProfileView from "./components/views/ProfileView";
